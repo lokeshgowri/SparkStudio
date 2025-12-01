@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SparkStudio — Premium Digital Studio</title>
+
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="nav reveal">
+    <div class="nav-left">
+      <img class="logo" src="assets/logo.png" alt="SparkStudio logo">
+      <span class="brand">SparkStudio</span>
+    </div>
+
+    <div class="nav-right">
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn-ghost">Contact</a>
+
+      <!-- Dark mode toggle -->
+      <div class="theme-toggle" title="Toggle dark mode">
+        <input id="darkToggle" type="checkbox" />
+        <label for="darkToggle" class="toggle-label"><span class="toggle-ball"></span></label>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="hero-inner reveal">
+      <h1 class="hero-title">Design & build — minimal, premium digital products that win clients.</h1>
+      <p class="hero-sub">SparkStudio crafts brand-led websites, apps and identity systems that convert.</p>
+      <div class="hero-actions">
+        <a class="cta" href="#contact">Start a project</a>
+        <a class="btn-ghost" href="#portfolio">See work</a>
+      </div>
+    </div>
+
+    <div class="hero-art reveal" aria-hidden="true">
+      <div class="device-card">
+        <img src="https://via.placeholder.com/760x440.png?text=Project+Preview" alt="">
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services" class="section reveal">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="grid cards">
+      <article class="card"><h3>Web Development</h3><p>Fast, accessible and conversion-focused websites.</p></article>
+      <article class="card"><h3>UI / UX Design</h3><p>Minimal interfaces that delight and convert.</p></article>
+      <article class="card"><h3>App Development</h3><p>Mobile-first apps for iOS & Android.</p></article>
+      <article class="card"><h3>Brand Identity</h3><p>Logos, palettes and visual systems that scale.</p></article>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section reveal">
+    <h2 class="section-title">Selected Work</h2>
+
+    <div class="grid cards">
+      <div class="card"><h4>Project Apollo</h4><p>Site rebuild — clearer messaging & +70% leads</p></div>
+      <div class="card"><h4>Sol App UI</h4><p>Mobile-first onboarding & retention.</p></div>
+      <div class="card"><h4>Nova Identity</h4><p>Brand + site for consultancy launch.</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2 class="section-title">About SparkStudio</h2>
+    <p class="about-text">We are a small, focused studio building premium digital experiences — clarity-first, performance-driven.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2 class="section-title">Start a project</h2>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-row">
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+      </div>
+
+      <div class="form-row">
+        <input id="email" name="email" type="email" placeholder="Email address" required>
+      </div>
+
+      <div class="form-row">
+        <textarea id="message" name="message" rows="6" placeholder="Short summary of your project" required></textarea>
+      </div>
+
+      <div class="form-row actions">
+        <button id="sendBtn" type="submit" class="cta">Send message</button>
+        <div id="formStatus" role="status"></div>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer reveal">
+    <div>© <span id="year"></span> SparkStudio — Crafted with care.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
